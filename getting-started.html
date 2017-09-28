@@ -1,0 +1,228 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+<style type="text/css">
+
+body{ 
+    color: #192057;
+}
+#pageWraper{
+    color: #1E2A8B;
+    font: 14px/1.4 'Droid Sans', sans-serif;
+    width: 1350px;
+    height: 70px;
+    border-bottom: 2px solid #F9F7F7; 
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+}
+#header{
+    height: 127px;
+    width: 1000px;
+}
+#logo{
+    position: relative;
+    left: 200px;
+}
+#navMenu{
+    position: relative;
+    left: 350px;
+    top: -55px;
+}
+#navMenu2{
+    position: relative;
+    right: 200px;
+}
+#sideMenu{
+	width: 160px;
+	position: relative;
+	left: 281px;
+	top: 100px;
+
+}
+#cartojs{
+	position: relative;
+	left: 40px;
+}
+#location{
+	position: relative;
+	left: 40px;
+}
+#builder{
+	position: relative;
+	left: 40px;
+}
+#leftpage{
+	width: 631px;
+	position: relative;
+	left: 550px;
+	top: -690px;
+}
+table {
+    font-family: arial, sans-serif;
+    ;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+#nota1{
+	padding: 15px;
+	background-color: #DAFCDC; 
+	font-size: 90%;
+	border: 2px solid #F9F7F7; 
+}
+#nota2{
+	font-size: 90%;
+	background-color: #F9F7F7;
+}
+
+
+
+</style>
+<title>CARTO — Getting Started</title>
+</head>
+<body>
+    <div id="page">
+        <div id="pageWraper">
+            <div id="header">
+                <img src="logo_carto.png" id="logo" alt="Carto's Logo" width="160px" height="70px">
+                <div class="container">
+                    <div id="navMenu">
+                        <ul class="nav nav-pills">
+                            <li ><a href="#home"><b>Builder</b></a></li>
+                            <li ><a href="#client"><b>Engine</b></a></li>
+                            <li class=""><a href="#js"><b>Solutions<span class="glyphicon glyphicon-menu-down"></span></b></a></li>
+                            <li><a href="#started"><b>Pricing</b></a></li>
+                            <li><a href="#generalconcepts"><b>Blog</b></a></li>
+                            <div id="navMenu2" style="float:right">
+                                <ul class="nav nav-pills">
+                                    <li><a href="#maps"><b>Login</b></a></li>
+                                    <li><a href="#uiFunctions"><b>Contat us</b></a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>  <!--End of headerBtn-->
+                </div><!--End of container-->
+            </div><!--End of Header-->
+        </div><!--End of pageWraper-->
+
+        <div id="sideMenu">
+			<div class="panel">
+				<div class="panel-body">Home</div>
+					<div class="panel-body">Client libraries</div>
+					<div class="panel-body">
+					   	<h4 class="panel-title">
+					  		<a data-toggle="collapse" href="#cartojs"><span class="glyphicon glyphicon-record"></span>CARTO.js</a>
+					   	</h4>
+					</div>
+					<div id="cartojs" class="panel-collapse collapse in">
+					    <div class="panel-body"><b>Getting Started</b></div>
+					    <div class="panel-body">General Concepts</div>
+					    <div class="panel-body">Named Maps</div>
+					    <div class="panel-body">Specific UI Functions</div>
+					    <div class="panel-body">Events</div>
+					    <div class="panel-body">API Reference</div>
+					</div>
+					<div class="panel-body">
+					   	<h4 class="panel-title">
+					  		<a data-toggle="collapse" href="#location">Location Data Service</a>
+					   	</h4>
+					</div>
+					<div id="location" class="panel-collapse collapse in">
+					    <div class="panel-body">Routing</div>
+					</div>
+					<div class="panel-body">
+					   	<h4 class="panel-title">
+					  		<a data-toggle="collapse" href="#builder">Builder</a>
+					   	</h4>
+					</div>
+					<div id="builder" class="panel-collapse collapse in">
+					    <div class="panel-body"><span class="glyphicon glyphicon-picture"></span>Static</div>
+					    <div class="panel-body"><span class="glyphicon glyphicon-th"></span>Tiles</div>
+					    <div class="panel-body">WMS</div>
+					</div>
+				</div>
+			</div><!--End of SidMenu-->
+			<div id="leftpage">
+				<div id="txt1">
+					<h2 id="rotulo"><b>GETTING STARTED</b></h2>
+					<p>The simples way to use visualization created in CARTO on an external site is as follows</p>
+				</div>
+				<img id="codeImg" src="cartoCode.jpg" alt="Carto's Code" style="width:631px;height:263px;">
+				<a id="codeLikn" href="https://github.com/CartoDB/cartodb.js/blob/develop/examples/easy.html" target="_blank">Grab the complete example source code</a>
+				<div id="txt2">
+					<h4><b>Using the CARTO.js LibraryPermalink</b></h4>
+					<p>CARTO-js can be used to embed a visualization you have designed using CARTO's user interface, or to dynamically create visualizations from scratch, using data. If you want to create new maps on your webpage, jump to Creatind a visualization from scratch. If you already have maps on your webpage and want to add CARTO visualization to them, read Adding CARTO layers to an existing map.<br><br> You can also use the CARTO APIs to create visualizations programmatically. This can be useful when the visualizations react to user interactions. To read more about it, jumo to Creating visualizations at runtime.</p>		
+				</div>
+				<table>
+					<tr>
+						<th><b>Arguments</b></th>
+					    <th><b>Description</b></th>
+					</tr>
+					<tr>
+					    <td>map_id</td>
+					    <td>a DOM object</td>
+					</tr>
+					<tr>							
+					    <td>vizjson_url</td>
+					    <td>url of the vizjson object</td>
+					</tr>
+					<tr>
+					    <td>callback(vis,layers)</td>
+					    <td>If a function is specified, it is called once the visualization is created</td>
+					</tr>
+				</table>	
+				<div id="txt3">
+					<h4><b>Other Mapping Libraries</b></h4>
+					<p>We have also made it easy for you to build maps using the mapping library of your choice. Whether you are using Leaflet or something else, our CARTO.js code remains the same. This makes our API documentation simple and straightforward. It also makes it easy for you to consistently develop, or maintain, multiple maps online.</p>
+				</div>
+				<div id="nota1">
+					<div class="row">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<span class="glyphicon glyphicon-info-sign"></span>
+						</div>
+						<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+							<p>CARTO.js automaticallly includes dependencies from other mapping libraries (such as Leaflet, jQuerry, Mustache, Underscore, ans so on). You do not have to manually include these libraries, or worry about other mapping library version control, when you are using CARTO.js. If you need to see which version of other mapping libraries are included, view the vendor folder for each CARTO.js release.</p>	
+						</div>
+					</div>
+				</div>
+					
+				<div id="txt4">
+					<h4><b>Creating a Visualization from ScratchPermalink</b></h4>
+					<p>This is the easiest way to quickly get a CARTO map onto your webpage. Use this method when there is no map in your application, and you want to add the visualization to hack over it. CARTO.js handles all the details of loading a map interface, basemap, and your CARTO visualization.<br><br>You can start by giving CARTO.js the DIV ID from your HTML where you want to place your map, and the viz.json URL of your visualization (which you can get from the Publish your map options)</p>
+				</div>
+
+				<div id="txt5">
+					<h4><b>Next Steps</b></h4>
+					<p>Once the form, with the stored payment token, is submitted to your server, you'll want to use the paymen details just collected. Usually this means one of three actions.</p>
+				</div>
+				<div id="nota2">
+					<div class="row">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<span class="glyphicon glyphicon-phone"></span>
+						</div>
+						<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+							<h6><b>General Concepts</b></h6>
+							<p>Give your mobile or tablets app the power of interactive maps</p>		
+						</div>
+					</div>
+
+				</div>
+				<div id="txt6">
+					<h4><b>Questions?</b></h4>
+					<p>We are always happy to help with code or other questions you might have! Search our site for more information or <a href="https://carto.com/request-live-demo/">send us an email!</a></p>
+										
+				</div>
+			</div><!--End of leftpage-->
+	</div><!--End of page-->
+</body>
+</html>
