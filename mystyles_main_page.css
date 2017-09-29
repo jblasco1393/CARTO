@@ -2,16 +2,20 @@ body
 {
 	background-color:#F7F3F2;
 }
-.navbar-default {
-	background-color: #fff;
-}
 a{
 	color: #393A6A;
 }
+.sideMenu{
+	position: relative;
+}
+
 .nav-pills{
 	border-bottom: 1px solid #D8D8DC;
 }
-#rotulo{
+#mainLogo{
+	margin-right: 40px;
+}
+.rotulo{
 	margin-top: 100px;
 	margin-bottom: 20px;
 	font-family: 'Ubuntu', sans-serif;
@@ -47,4 +51,24 @@ a{
 	border: 1px solid #D8D8DC;
 	box-shadow:1px 1px 2px #777;
 }
-
+#infoBox-lg{
+	margin-top: 40px;
+}
+#btnBox-lg{
+	margin-bottom:40px;
+	margin-top: 20px;	
+}
+#infoBox-xs{
+	margin: 40px;
+}
+#footer{
+	background-color: #fff;
+	border-top: 1px solid #D8D8DC;
+}
+#footerLogo{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#inputBox{
+	margin-top: 100px;
+}

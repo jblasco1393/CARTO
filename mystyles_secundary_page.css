@@ -1,0 +1,30 @@
+body{
+	background-color: #fff;
+}
+.navbar-default{
+	background-color: #fff;
+}
+.navbar-inner{
+	border-bottom: 1px solid #D8D8DC;
+}
+#sideMenu{
+	margin-top: 100px;
+	font-size: ;
+	color: #DCDCDC;
+}
+#dropdownCartojs"{
+	position: relative;
+	left: 100px
+}
+.rotulo{
+	margin-top: 1000px;
+	margin-bottom: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #393A6A;
+}
+#comment{
+	font-family:'Lato', sans-serif;
+	color: #393A6A;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
