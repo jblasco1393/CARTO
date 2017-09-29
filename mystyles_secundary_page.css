@@ -7,6 +7,9 @@ body{
 .navbar-inner{
 	border-bottom: 1px solid #D8D8DC;
 }
+#mainLogo{
+	margin-right: 40px;
+}
 #sideMenu{
 	margin-top: 100px;
 	font-size: ;
@@ -22,9 +25,25 @@ body{
 	font-family: 'Ubuntu', sans-serif;
 	color: #393A6A;
 }
-#comment{
+.comment{
 	font-family:'Lato', sans-serif;
 	color: #393A6A;
-	font-size: 20px;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+#note{
+	padding:20px ;
+	background-color: #EAFFE1; 
+	font-family:'Lato', sans-serif;
+	color: #393A6A;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+#note2{
+	padding:20px ;
+	background-color: #F3F3F3;
+	font-family:'Lato', sans-serif;
+	color: #393A6A;
+	font-size: 15px;
 	margin-bottom: 20px;
 }
