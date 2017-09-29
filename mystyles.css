@@ -1,0 +1,50 @@
+body
+{
+	background-color:#F7F3F2;
+}
+.navbar-default {
+	background-color: #fff;
+}
+a{
+	color: #393A6A;
+}
+.nav-pills{
+	border-bottom: 1px solid #D8D8DC;
+}
+#rotulo{
+	margin-top: 100px;
+	margin-bottom: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #393A6A;
+}
+#comment{
+	font-family:'Lato', sans-serif;
+	color: #393A6A;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.stylish-input-group .input-group-addon{
+    background: white;
+}
+.stylish-input-group .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+#infoBox{
+	font-family: 'Merriweather Sans', sans-serif;
+	margin-top: 50px;
+	color: #5C5D80;
+	font-size: 15px;
+}
+.boton{
+	background-color: #fff;
+	border: 1px solid #D8D8DC;
+	box-shadow:1px 1px 2px #777;
+}
+
