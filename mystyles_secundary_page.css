@@ -1,5 +1,10 @@
 body{
 	background-color: #fff;
+	font-family:'Lato', sans-serif;
+	color: #393A6A;
+}
+a{
+	color: #393A6A;
 }
 .navbar-default{
 	background-color: #fff;
@@ -15,19 +20,62 @@ body{
 	font-size: ;
 	color: #DCDCDC;
 }
-#dropdownCartojs"{
-	position: relative;
-	left: 100px
+.panel-collapse{
+	margin-left: 30px;
+	color: #393A6A;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#openSim{
+	margin-left: 50px;
+}
+.offcanvas {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 .rotulo{
 	margin-top: 1000px;
 	margin-bottom: 20px;
 	font-family: 'Ubuntu', sans-serif;
-	color: #393A6A;
+	
 }
 .comment{
-	font-family:'Lato', sans-serif;
-	color: #393A6A;
 	font-size: 16px;
 	margin-bottom: 20px;
 }
@@ -46,4 +94,16 @@ body{
 	color: #393A6A;
 	font-size: 15px;
 	margin-bottom: 20px;
+}
+#codeImg{
+	margin-bottom: 25px;
+}
+#codeLink{
+	font-size: 120%;
+}
+#txt2{
+	margin-top: 70px;
+}
+footer{
+	border-top: 1px solid #F7F3F2
 }
