@@ -14,46 +14,103 @@
 <div class="offcanvas">
 	<!-- Main Menu -->
 	<nav class="navbar navbar-default">
-	  <div class="navbar-inner container">
-	    <div class="navbar-header">
-	    	<a href="documentation.html"><img src="logo_carto.png" id="logo" alt="Carto's Logo" width="120px" height="53px"></a>
-	      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	        <span class="glyphicon glyphicon-th"></span>                      
-	      </button>
-	    </div> <!--END OF THE HEADER-->
+		<div class="row">
+			<div class="col-xs-2"></div>
+			<div  class="col-xs-8">
+			  <div class="navbar-inner container">
+			    <div class="navbar-header">
+			    	<a id="mainLogo" href="documentation.html"><img src="logo_carto.png" alt="Carto's Logo" width="120px" height="53px"></a>
+			      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			    </div> <!--END OF THE HEADER-->
 
-	    <div class="collapse navbar-collapse" id="myNavbar">
-	      <ul class="nav navbar-nav">
-	        <li><a href="https://carto.com/builder/"><b>Builder</b></a></li>
-	        <li><a href="https://carto.com/engine/"><b>Engine</b></a></li>
-	        <li class="dropdown">
-	          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Solutions</b><span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	          	<li><a href="https://carto.com/solutions/banking-and-insurance/">Banking & Insurance</a></li>
-		            <li><a href="https://carto.com/solutions/business-intelligence-and-analytics/">BI & Analytics</a></li>
-		            <li><a href="https://carto.com/solutions/cities-government/">Cities & Government</a></li>
-		            <li><a href="https://carto.com/solutions/banking-and-insurance/">Banking & Insurance</a></li>
-		            <li><a href="https://carto.com/solutions/real-estate/">Real Estate</a></li>
-		            <li><a href="https://carto.com/solutions/retail/">Retail</a></li>
-		            <li><a href="https://carto.com/solutions/transport-logistics/">Transport & Logistics</a></li>
-		            <li><a href="https://carto.com/solutions/telco-utilities/">Telco & Utilities</a></li>
-		            <li><a href="https://carto.com/solutions/healthcare-and-pharma/">Healthcare & Pharma</a></li>
-		            <li><a href="https://carto.com/solutions/web-and-mobile-development/">Web & Mobile Development</a></li>
-		            <li><a href="https://carto.com/solutions/natural-conservation-science/">Natural & Conservation Science</a></li>
-		            <li><a href="https://carto.com/solutions/journalism-media/">Journalism & Media</a></li>
-	                <li><a href="https://carto.com/solutions/education-and-research/">Education & Research</a></li>
-	          </ul>
-	        </li>
-	        <li><a href="https://carto.com/pricing/"><b>Pricing</b></a></li>
-	        <li><a href="https://carto.com/blog"><b>Blog</b></a></li>
-	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="https://carto.com/login"><span class="glyphicon glyphicon-log-in"></span><b> Login</b></a></li>
-	        <li><a href="https://carto.com/request-live-demo/"><span class="glyphicon glyphicon-envelope"></span> <b>Contact us</b></a></li>
-	      </ul>
-	    </div>
-	  </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			        <li><a href="https://carto.com/builder/"><b>Builder</b></a></li>
+			        <li><a href="https://carto.com/engine/"><b>Engine</b></a></li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Solutions</b><span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			          	<li><a href="https://carto.com/solutions/banking-and-insurance/">Banking & Insurance</a></li>
+				            <li><a href="https://carto.com/solutions/business-intelligence-and-analytics/">BI & Analytics</a></li>
+				            <li><a href="https://carto.com/solutions/cities-government/">Cities & Government</a></li>
+				            <li><a href="https://carto.com/solutions/banking-and-insurance/">Banking & Insurance</a></li>
+				            <li><a href="https://carto.com/solutions/real-estate/">Real Estate</a></li>
+				            <li><a href="https://carto.com/solutions/retail/">Retail</a></li>
+				            <li><a href="https://carto.com/solutions/transport-logistics/">Transport & Logistics</a></li>
+				            <li><a href="https://carto.com/solutions/telco-utilities/">Telco & Utilities</a></li>
+				            <li><a href="https://carto.com/solutions/healthcare-and-pharma/">Healthcare & Pharma</a></li>
+				            <li><a href="https://carto.com/solutions/web-and-mobile-development/">Web & Mobile Development</a></li>
+				            <li><a href="https://carto.com/solutions/natural-conservation-science/">Natural & Conservation Science</a></li>
+				            <li><a href="https://carto.com/solutions/journalism-media/">Journalism & Media</a></li>
+			                <li><a href="https://carto.com/solutions/education-and-research/">Education & Research</a></li>
+			          </ul>
+			        </li>
+			        <li><a href="https://carto.com/pricing/"><b>Pricing</b></a></li>
+			        <li><a href="https://carto.com/blog"><b>Blog</b></a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-log-in"></span><b> Login</b></a></li>
+			        <li><a href="https://carto.com/request-live-demo/"><span class="glyphicon glyphicon-envelope"></span> <b>Contact us</b></a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</div>
+		</div>
 	</nav> <!--End of Main Menu-->
+
+	<!--Login -->
+	<div id="id01" class="modal">
+		<form class="modal-content animate" action="/action_page.php">
+		    <div class="imgcontainer">
+		     	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		    	<img src="loginpic.png" alt="Map picture" class="avatar">
+		    </div>
+
+		    <div class="contain">
+		    	<label><b>Username</b></label>
+		    	<input class="username" type="text" placeholder="Enter Username" name="uname" required>
+
+		    	<label><b>Password</b></label>
+		    	<input type="password" placeholder="Enter Password" name="psw" required>
+		        
+		    	<button class="login" type="submit">Login</button>
+		    	<p>If you don't have an account, you can Sing up <a onclick="document.getElementById('id01').style.display='none'; document.getElementById('id02').style.display='block'" style="width:auto;">HERE</a></p>
+		    	<input type="checkbox" checked="checked"> Remember me
+		    	<span  class="psw"><a href="#">Forgot your password?</a></span>
+		    </div>
+		</form>
+	</div><!--End of Login -->
+	
+	<!--Sign in-->
+	<div id="id02" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+		<form class="modal-content animate" action="/action_page.php">
+	    	<div class="imgcontainer">
+		     	<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+		    	<img src="logo_carto.png" alt="Map picture" class="avatar2">
+		    </div>
+	    	<div class="contain">
+	    		<label><b>Email</b></label>
+	   			<input class="username" type="text" placeholder="Enter Email" name="email" required>
+				<label><b>Password</b></label>
+	      		<input type="password" placeholder="Enter Password" name="psw" required>
+
+	      		<label><b>Repeat Password</b></label>
+	      		<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+	      		<input type="checkbox" checked="checked"> Remember me
+	      		<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+	      		<div class="clearfix">
+	        		<button  type="submit" class="login signupbtn">Sign Up</button>
+	      		</div>
+	    	</div>
+	  	</form>
+	</div><!--End of Sign in-->
+
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="documentation.html">Home</a>
@@ -69,7 +126,7 @@
 		    </ul>
 		<a href="#">Location Data Service</a>
 			<ul>
-			    <li><a href="#"> Routing</a></li>
+				<li><a href="#"> Routing</a></li>
 			</ul>
 		<a href="#">Builder</a>
 			<ul>
@@ -211,7 +268,6 @@
 
 	<!--Page Footer-->
 	<footer class="grid Footer mobile--flex container"></footer>
-
 	<footer class="container">
 		<div class="row hidden-xs">
 			<div class="col-sm-3 col-md-4">
