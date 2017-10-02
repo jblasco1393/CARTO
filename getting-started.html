@@ -114,13 +114,13 @@
 		<a href="documentation.html">Home</a>
 		<a href="#">Client libraries</a>
   		<a href="#">CARTO.js<span class="caret"></span></a>
-		    <ul>
-		        <li><a href="getting-started.html"><b>Getting Started</b></a></li>
-		        <li><a href="#">General Conepts</a></li>
-		        <li><a href="#">Named Maps</a></li>                        
-		        <li><a href="#">Specific UI Functions</a></li>
-		        <li><a href="#">Events</a></li>
-		        <li><a href="#">API Reference</a></li>
+		    <ul class = "nav nav-tabs">
+		        <li class="active"><a data-toggle="tab" href="#getting-started">Getting Started</a></li>
+		        <li><a data-toggle="tab" href="#general-concepts">General Conepts</a></li>
+		        <li><a data-toggle="tab" href="#named-maps">Named Maps</a></li>                        
+		        <li><a data-toggle="tab" href="#specific-functions">Specific UI Functions</a></li>
+		        <li><a data-toggle="tab" href="#events">Events</a></li>
+		        <li><a data-toggle="tab" href="#`references">API Reference</a></li>
 		    </ul>
 		<a href="#">Location Data Service</a>
 			<ul>
@@ -159,12 +159,14 @@
 							   	</h4>
 							</div>
 							<div id="cartojs" class="panel-collapse collapse in">
-							    <div class="panel-body"><a href="getting-started.html"><b>Getting Started</b></a></div>
-							    <div class="panel-body"><a href="#">General Concepts</a></div>
-							    <div class="panel-body"><a href="#">Named Maps</a></div>
-							    <div class="panel-body"><a href="#">Specific UI Functions</a></div>
-							    <div class="panel-body"><a href="#">Events</a></div>
-							    <div class="panel-body"><a href="#">API Reference</a></div>
+							    <ul class = "nav nav-tabs">
+							        <li class="active"><a data-toggle="tab" href="#getting-started">Getting Started</a></li>
+							        <li><a data-toggle="tab" href="#general-concepts">General Conepts</a></li>
+							        <li><a data-toggle="tab" href="#named-maps">Named Maps</a></li>                        
+							        <li><a data-toggle="tab" href="#specific-functions">Specific UI Functions</a></li>
+							        <li><a data-toggle="tab" href="#events">Events</a></li>
+							        <li><a data-toggle="tab" href="#references">API Reference</a></li>
+							    </ul>
 							</div>
 							<div class="panel-body">
 							   	<h4 class="panel-title">
@@ -189,80 +191,369 @@
 			</div>
 			
 			<!--Page Content-->
-			<div class="col-sm-10 col-md-8">
-				<div id="txt1">
-					<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>GETTING STARTED</b></h1>
-					<p class="comment">The simples way to use visualization created in CARTO on an external site is as follows</p>
-				</div><br>
-				<img id="codeImg" src="cartoCode.jpg" alt="Carto's Code" style="width:100%"><br>
-				<a style="color:#5CDEFF;" id="codeLink" href="https://github.com/CartoDB/cartodb.js/blob/develop/examples/easy.html" target="_blank">Grab the complete example source code</a>
-				<div id="txt2">
-					<h4><b>Using the CARTO.js LibraryPermalink</b></h4>
-					<p class="comment">CARTO-js can be used to embed a visualization you have designed using CARTO's user interface, or to dynamically create visualizations from scratch, using data. If you want to create new maps on your webpage, jump to Creatind a visualization from scratch. If you already have maps on your webpage and want to add CARTO visualization to them, read Adding CARTO layers to an existing map.<br><br> You can also use the CARTO APIs to create visualizations programmatically. This can be useful when the visualizations react to user interactions. To read more about it, jumo to Creating visualizations at runtime.</p>		
-				</div><br>
-				<table class="table table-bordered">
-					<tr>
-						<th><b>Arguments</b></th>
-					    <th><b>Description</b></th>
-					</tr>
-					<tr>
-					    <td>map_id</td>
-					    <td>a DOM object</td>
-					</tr>
-					<tr>							
-					    <td>vizjson_url</td>
-					    <td>url of the vizjson object</td>
-					</tr>
-					<tr>
-					    <td>callback(vis,layers)</td>
-					    <td>If a function is specified, it is called once the visualization is created</td>
-					</tr>
-				</table><br>	
-				<div id="txt3">
-					<h4><b>Other Mapping Libraries</b></h4>
-					<p class="comment">We have also made it easy for you to build maps using the mapping library of your choice. Whether you are using Leaflet or something else, our CARTO.js code remains the same. This makes our API documentation simple and straightforward. It also makes it easy for you to consistently develop, or maintain, multiple maps online.</p>
-				</div><br>
-				<div id="note">
-					<div class="row">
-						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-							<img src="info.png" alt="Info Logo" width="30px" height="30px">
-						</div>
-						<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
-							<p >CARTO.js automaticallly includes dependencies from other mapping libraries (such as Leaflet, jQuerry, Mustache, Underscore, ans so on). You do not have to manually include these libraries, or worry about other mapping library version control, when you are using CARTO.js. If you need to see which version of other mapping libraries are included, view the vendor folder for each CARTO.js release.</p>	
+			<div class="tab-content">
+			    <div id="getting-started" class="tab-pane fade in active">
+					<div class="col-sm-10 col-md-8">
+						<div id="txt1">
+							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>GETTING STARTED</b></h1>
+							<p class="comment">The simples way to use visualization created in CARTO on an external site is as follows</p>
+						</div><br>
+						<img id="codeImg" src="cartoCode.jpg" alt="Carto's Code" style="width:100%"><br>
+						<a style="color:#5CDEFF;" id="codeLink" href="https://github.com/CartoDB/cartodb.js/blob/develop/examples/easy.html" target="_blank">Grab the complete example source code</a>
+						<div id="txt2">
+							<h4><b>Using the CARTO.js LibraryPermalink</b></h4>
+							<p class="comment">CARTO-js can be used to embed a visualization you have designed using CARTO's user interface, or to dynamically create visualizations from scratch, using data. If you want to create new maps on your webpage, jump to Creatind a visualization from scratch. If you already have maps on your webpage and want to add CARTO visualization to them, read Adding CARTO layers to an existing map.<br><br> You can also use the CARTO APIs to create visualizations programmatically. This can be useful when the visualizations react to user interactions. To read more about it, jumo to Creating visualizations at runtime.</p>		
+						</div><br>
+						<table class="table table-bordered">
+							<tr>
+								<th><b>Arguments</b></th>
+							    <th><b>Description</b></th>
+							</tr>
+							<tr>
+							    <td>map_id</td>
+							    <td>a DOM object</td>
+							</tr>
+							<tr>							
+							    <td>vizjson_url</td>
+							    <td>url of the vizjson object</td>
+							</tr>
+							<tr>
+							    <td>callback(vis,layers)</td>
+							    <td>If a function is specified, it is called once the visualization is created</td>
+							</tr>
+						</table><br>	
+						<div id="txt3">
+							<h4><b>Other Mapping Libraries</b></h4>
+							<p class="comment">We have also made it easy for you to build maps using the mapping library of your choice. Whether you are using Leaflet or something else, our CARTO.js code remains the same. This makes our API documentation simple and straightforward. It also makes it easy for you to consistently develop, or maintain, multiple maps online.</p>
+						</div><br>
+						<div class="note">
+							<div class="row">
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+									<img src="info.png" alt="Info Logo" width="30px" height="30px">
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+									<p >CARTO.js automaticallly includes dependencies from other mapping libraries (such as Leaflet, jQuerry, Mustache, Underscore, ans so on). You do not have to manually include these libraries, or worry about other mapping library version control, when you are using CARTO.js. If you need to see which version of other mapping libraries are included, view the vendor folder for each CARTO.js release.</p>	
+								</div>
+							</div>
+						</div><br>
+							
+						<div id="txt4">
+							<h4><b>Creating a Visualization from ScratchPermalink</b></h4>
+							<p class="comment">This is the easiest way to quickly get a CARTO map onto your webpage. Use this method when there is no map in your application, and you want to add the visualization to hack over it. CARTO.js handles all the details of loading a map interface, basemap, and your CARTO visualization.<br><br>You can start by giving CARTO.js the DIV ID from your HTML where you want to place your map, and the viz.json URL of your visualization (which you can get from the Publish your map options)</p>
+						</div><br>
+
+						<div id="txt5">
+							<h4><b>Next Steps</b></h4>
+							<p class="comment">Once the form, with the stored payment token, is submitted to your server, you'll want to use the paymen details just collected. Usually this means one of three actions.</p>
+						</div><br>
+						<div class="note2">
+							<div class="row">
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+									<img src="phone.png" alt="Phone Logo" width="25px" height="30px">
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+									<h5><b>General Concepts</b></h5>
+									<p>Give your mobile or tablets app the power of interactive maps</p>		
+								</div>
+							</div>
+						</div><br>
+						<div id="txt6">
+							<h4><b>Questions?</b></h4>
+							<p class="comment">We are always happy to help with code or other questions you might have! Search our site for more information or <a style="color:#5CDEFF;" href="https://carto.com/request-live-demo/">send us an email!</a></p>					
+						</div><br>
+					</div><!--End of Page Content-->
+
+					<div class="col-sm-0 col-md-1"></div>
+				</div>
+
+				<div id="general-concepts" class="tab-pane fade">
+					<div class="col-sm-10 col-md-8">
+						<div id="txt1">
+							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>General Concepts</b></h1>
+							<p class="comment"></p>
 						</div>
 					</div>
-				</div><br>
-					
-				<div id="txt4">
-					<h4><b>Creating a Visualization from ScratchPermalink</b></h4>
-					<p class="comment">This is the easiest way to quickly get a CARTO map onto your webpage. Use this method when there is no map in your application, and you want to add the visualization to hack over it. CARTO.js handles all the details of loading a map interface, basemap, and your CARTO visualization.<br><br>You can start by giving CARTO.js the DIV ID from your HTML where you want to place your map, and the viz.json URL of your visualization (which you can get from the Publish your map options)</p>
-				</div><br>
+				</div>
 
-				<div id="txt5">
-					<h4><b>Next Steps</b></h4>
-					<p class="comment">Once the form, with the stored payment token, is submitted to your server, you'll want to use the paymen details just collected. Usually this means one of three actions.</p>
-				</div><br>
-				<div id="note2">
-					<div class="row">
-						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-							<img src="phone.png" alt="Phone Logo" width="25px" height="30px">
-						</div>
-						<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
-							<h5><b>General Concepts</b></h5>
-							<p>Give your mobile or tablets app the power of interactive maps</p>		
+				<div id="named-maps" class="tab-pane fade">
+					<div class="col-sm-10 col-md-8">
+						<div id="txt1">
+							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>Named Maps</b></h1>
+							<p class="comment"></p>
 						</div>
 					</div>
-				</div><br>
-				<div id="txt6">
-					<h4><b>Questions?</b></h4>
-					<p class="comment">We are always happy to help with code or other questions you might have! Search our site for more information or <a style="color:#5CDEFF;" href="https://carto.com/request-live-demo/">send us an email!</a></p>					
-				</div><br>
-			</div><!--End of Page Content-->
+				</div>
 
-			<div class="col-sm-0 col-md-1"></div>
-		</div>
-	</div> 
-	<br><br>
+				<div id="specific-functions" class="tab-pane fade">
+					<div class="col-sm-10 col-md-8">
+						<div id="txt1">
+							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>Specific UI Functions</b></h1>
+							<p class="comment">There are a few functions in CARTO.js for creating, enabling, and disabling pieces of the user interface.</p>
+						</div><br>						
+						<div id="txt2">
+							<h4><b>vis.addOverlay(tooltip)</b></h4>
+							<p class="comment">A tooltip is an infowindow that appears when you hover your mouse over a map feature with <i>vis.addOverlay(options)</i>. A tooltip appears where the mouse cursor is located on the map. You can customize the position of how the tooltip appears by defining the position options.</p>
+						</div>
+						<div class="note">
+							<div class="row">
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+									<img src="info.png" alt="Info Logo" width="30px" height="30px">
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+									<p >If you are using <i>createLayer</i> for a map object that contains an enabled tooltip, you can disable the tooltip by applying the <i>false</i> value. <a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/carto-js/api-methods/#cartodbcreatelayermap-layersource--options--callback">See the cartodb.createLayer(map, layerSource [, options] [, callback])</a> <i>tooltip</i> description for how to enable/disable an interactive tooltip.</p>	
+								</div>
+							</div>
+						</div><br>
+						<div id="txt2">
+							<h4><b>vis.addOverlay(infobox)</b></h4>
+							<p class="comment">Similar to a tooltip, an infobox displays a small box when you hover your mouse over a map feature. When viewing an infobox on a map, the position of the infobox is fixed, and always appears in the same position; depending on how you defined the position values for the infobox.</p>
+						</div>
+						<div id="txt2">
+							<h4><b>cartodb.vis.Vis.addInfowindow(map, layer, fields [, options])Permalink</b></h4>
+							<p class="comment">Infowindows provide additional interactivity for your published map, controlled by layer events. It enables interaction and overrides the layer interactivity. A pop-up information window appears when a viewer clicks on a map feature.</p>
+						</div>
+						
+						<table class="table table-bordered">
+							<tr>
+								<th><b>Option</b></th>
+							    <th><b>Description</b></th>
+							</tr>
+							<tr>
+							    <td>map</td>
+							    <td>native map objetc or leaflet</td>
+							</tr>
+							<tr>							
+							    <td>layer</td>
+							    <td>cartodb layer (or sublayer)</td>
+							</tr>
+							<tr>
+							    <td>fields</td>
+							    <td>array of column names.<br><br>Note: this thells CARTO what columns from your dataset should appear in your infowindow.</td>
+							</tr>
+							<tr>
+							    <td> infowindowTemplate</td>
+							    <td>allows you to set the HTML of the template.</td>
+							</tr>
+							<tr>
+							    <td>templateType</td>
+							    <td>indicates the type of template (Mustache template or Underscore template placeholders).</td>
+							</tr>
+						</table>
+						<div class="note2">
+							<div class="row">
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+									<img src="tip-icon.png" alt="Label-icon">
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+									<p><b>TIP:</b>See <a style="color:#5CDEFF;" href="https://carto.com/docs/faqs/infowindows/#how-can-i-use-cartojs-to-create-and-style-infowindows">How can I use CARTO.js to create and style infowindows?</a> for an overview of how to create infowindows.</p>		
+								</div>
+							</div>
+						</div><br><br><br>
+					</div>
+				</div>
+				<div id="events" class="tab-pane fade">
+					<div class="col-sm-10 col-md-8">
+						<div id="txt1">
+							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>Events</b></h1>
+							<p class="comment">You can bind custom functions to layer events by adding listeners and callbacks to the async portions of the CARTO.js library. Active layer events are triggered by layers on your webpage that are already loaded (Tip: these are the <i>createLayer</i> and <i>createVis</i> functions that return the done event. For details, see <a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/carto-js/getting-started/#loading-listener-events">Loading Events</a>). Each event requires the layer to include an interactivity layer. This is useful for integrating your website with your maps, adding events for mouseovers and click events.</p>
+						</div>
+						<div class="note">
+							<div class="row">
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+									<img src="info.png" alt="Info-icon" width="32px" height="32px">
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+									<p>Be mindful of using these events, as these functions can get costly if you have a lot of features on a map.</p>		
+								</div>
+							</div>
+						</div>
+						<div id="txt2">
+							<h4><b>layer</b></h4><br><br>
+							<h4><b>layer.featureOver(event, latlng, pos, data, layerIndex)</b></h4>
+							<p class="comment">Triggered when the user mouse hovers on any feature.</p>
+						</div>
+						<table class="table table-bordered">
+							<tr>
+								<th><b>Name</b></th>
+							    <th><b>Description</b></th>
+							</tr>
+							<tr>
+							    <td>event</td>
+							    <td>Browser mouse event object.</td>
+							</tr>
+							<tr>							
+							    <td>latlng</td>
+							    <td>Array with the LatLng ([lat,lng]) where the layer was clicked.</td>
+							</tr>
+							<tr>
+							    <td>pos</td>
+							    <td>Object with x and y position in the DOM map element.</td>
+							</tr>
+							<tr>
+							    <td> data</td>
+							    <td>The CARTO data of the clicked feature with the <i>interactivity</i> param.</td>
+							</tr>
+							<tr>
+							    <td>layerIndex</td>
+							    <td>The <i>layerIndex</i> where the event happened.</td>
+							</tr>
+						</table>
+						<div id="txt2">
+							<h4><b>layer.featureOut(layerIndex)Permalink</b></h4>
+							<p class="comment">Triggered when the user hovers out any feature. For example, you might want to use this event if you highlight polygons on mouseover and need a way to know when to remove the highlighting after the mouse has left.</p>
+						</div>
+						<div id="txt2">
+							<h4><b>layer.featureClick(event, latlng, pos, data, layerIndex)Permalink</b></h4>
+							<p class="comment">Triggered when the user clicks on a feature of a layer.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="references" class="tab-pane fade">
+					<div class="col-sm-10 col-md-8">
+						<div id="txt1">
+							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>API Reference</b></h1>
+							<p class="comment">This documentation is intended for developers and describes specific methods from the latest version of the CARTO.js library.</p>
+							<div id="txt2">
+								<h4><b>cartodb.createVisPermalink</b></h4><br><br>
+								<h4><b>cartodb.createVis(map_id, vizjson_url[, options] [, callback])Permalink</b></h4>
+								<p class="comment">Creates a visualization inside the map_id DOM object.</p>
+							</div>
+							<table class="table table-bordered">
+								<tr>
+									<th><b>Name</b></th>
+								    <th><b>Description</b></th>
+								</tr>
+								<tr>
+								    <td>map_id</td>
+								    <td>a DOM object, for example <i>$('#map')</i> or a DOM id.</td>
+								</tr>
+								<tr>							
+								    <td>vizjson_url</td>
+								    <td>url of the vizjson object.</td>
+								</tr>
+								<tr>
+									<th><b>Options</b></th>
+								    <th><b></b></th>
+								</tr>
+								<tr>
+								    <td>shareable</td>
+								    <td>add facebook and twitter share buttons.</td>
+								</tr>
+								<tr>
+								    <td>title</td>
+								    <td>adds a header with the title of the visualization.</td>
+								</tr>
+								<tr>
+								    <td>description</td>
+								    <td>adds description to the header (as you set in the UI).</td>
+								</tr>
+								<tr>
+								    <td>search</td>
+								    <td>adds a search control (default: true).</td>
+								</tr>
+								<tr>
+								    <td>zoomControl</td>
+								    <td>adds zoom control (default: true).</td>
+								</tr>
+								<tr>
+								    <td>loaderControl</td>
+								    <td>adds loading control (default: true).</td>
+								</tr>
+								<tr>
+								    <td>center_lat</td>
+								    <td>latitude where the map is initializated.</td>
+								</tr>
+								<tr>
+								    <td>center_lon</td>
+								    <td>longitude where the map is initializated.</td>
+								</tr>
+								<tr>
+								    <td>zoom</td>
+								    <td>initial zoom.</td>
+								</tr>
+								<tr>
+								    <td>cartodb_logo</td>
+								    <td>default to true, set to false if you want to remove the CARTO logo.</td>
+								</tr>
+								<tr>
+								    <td>infowindow</td>
+								    <td>set to false if you want to disable the infowindow (enabled by default).</td>
+								</tr>
+								<tr>
+								    <td>time_slider</td>
+								    <td>show an animated time slider with Torque layers. This option is enabled by default, as shown with <i>time_slider: true</i> value. To disable the time slider, use <i>time_slider: false</i>. See <a style="color:#5CDEFF;" href="http://bl.ocks.org/michellechandra/081ca7160a8c782266d2">No Torque Time Slider - Example Code</a> for an example.<br><br>For details about customizing the time slider, see the <a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/torque/torque-time-slider/">Torque.js</a> documentation.</td>
+								</tr>
+								<tr>
+								    <td>layer_selector</td>
+								    <td>show layer selector (default: false).</td>
+								</tr>
+								<tr>
+								    <td>legends</td>
+								    <td>if it’s true legends are shown in the map.</td>
+								</tr>
+								<tr>
+								    <td>https</td>
+								    <td>if true, it makes sure that basemaps are converted to https when possible. If explicitly false, converts https maps to http when possible. If undefined, the basemap template is left as declared at <i>urlTemplate</i> in the viz.json.</td>
+								</tr>
+								<tr>
+								    <td>scrollwheel</td>
+								    <td>enable/disable the ability of zooming using scrollwheel (default enabled)</td>
+								</tr>
+								<tr>
+								    <td>fullscreen</td>
+								    <td>if true adds a button to toggle the map fullscreen</td>
+								</tr>
+								<tr>
+								    <td>mobile_layout</td>
+								    <td>if true enables a custom layout for mobile devices (default: false)</td>
+								</tr>
+								<tr>
+								    <td>force_mobile</td>
+								    <td>forces enabling/disabling the mobile layout (it has priority over mobile_layout argument)</td>
+								</tr>
+								<tr>
+								    <td>gmaps_base_type</td>
+								    <td>Use Google Maps as map provider whatever is the one specified in the viz.json”. Available types: ‘roadmap’, ‘gray_roadmap’, ‘dark_roadmap’, ‘hybrid’, ‘satellite’, ‘terrain’.</td>
+								</tr>
+								<tr>
+								    <td>gmaps_style</td>
+								    <td>Google Maps styled maps. See documentation.</td>
+								</tr>
+								<tr>
+								    <td>callback(vis,layers)</td>
+								    <td>if a function is specified, it is called once the visualization is created, passing vis and layers as arguments</td>
+								</tr>
+								<tr>
+								    <td>no_cdn</td>
+								    <td>true to disable CDN when fetching tiles</td>
+								</tr>
+							</table>
+							<div id="txt2">
+								<h6><b>Returns</b></h6>
+								<p class="comment">A promise object. You can listen for the following events:</p>
+							</div>
+							<table class="table table-bordered">
+								<tr>
+									<th><b>Event</b></th>
+								    <th><b>Description</b></th>
+								</tr>
+								<tr>
+								    <td>done</td>
+								    <td>triggered when the visualization is created, vis is passed as the first argument and layers is passed as the second argument. Each layer type has different options, see layers section.</td>
+								</tr>
+								<tr>							
+								    <td>error</td>
+								    <td>triggered when the layer couldn’t be created. The error string is the first argument.</td>
+								</tr>
+							</table>
+							<a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/carto-js/api-methods/">Visit this API for more detailed information</a><br><br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+
 
 	<!--Page Footer-->
 	<footer class="grid Footer mobile--flex container"></footer>
