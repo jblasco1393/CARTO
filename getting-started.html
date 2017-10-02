@@ -14,25 +14,22 @@
 <div class="offcanvas">
 	<!-- Main Menu -->
 	<nav class="navbar navbar-default">
-		<div class="row">
-			<div class="col-xs-2"></div>
-			<div  class="col-xs-8">
-			  <div class="navbar-inner container">
-			    <div class="navbar-header">
-			    	<a id="mainLogo" href="documentation.html"><img src="logo_carto.png" alt="Carto's Logo" width="120px" height="53px"></a>
-			      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			        <img src="home-icon.png">                        
-			      </button>
-			    </div> <!--END OF THE HEADER-->
+		<div class="navbar-inner container">
+		    <div class="navbar-header">
+		    	<a id="mainLogo" href="index.html"><img src="logo_carto.png" alt="Carto's Logo" width="120px" height="53px"></a>
+		      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <img src="home-icon.png">                       
+		      </button>
+		    </div> <!--END OF THE HEADER-->
 
-			    <div class="collapse navbar-collapse" id="myNavbar">
-			      <ul class="nav navbar-nav">
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		     	<ul class="nav navbar-nav">
 			        <li><a href="https://carto.com/builder/"><b>Builder</b></a></li>
 			        <li><a href="https://carto.com/engine/"><b>Engine</b></a></li>
 			        <li class="dropdown">
-			          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Solutions</b><span class="caret"></span></a>
-			          <ul class="dropdown-menu">
-			          	<li><a href="https://carto.com/solutions/banking-and-insurance/">Banking & Insurance</a></li>
+			          	<a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Solutions</b><span class="caret"></span></a>
+			          	<ul class="dropdown-menu">
+			          		<li><a href="https://carto.com/solutions/banking-and-insurance/">Banking & Insurance</a></li>
 				            <li><a href="https://carto.com/solutions/business-intelligence-and-analytics/">BI & Analytics</a></li>
 				            <li><a href="https://carto.com/solutions/cities-government/">Cities & Government</a></li>
 				            <li><a href="https://carto.com/solutions/banking-and-insurance/">Banking & Insurance</a></li>
@@ -45,19 +42,17 @@
 				            <li><a href="https://carto.com/solutions/natural-conservation-science/">Natural & Conservation Science</a></li>
 				            <li><a href="https://carto.com/solutions/journalism-media/">Journalism & Media</a></li>
 			                <li><a href="https://carto.com/solutions/education-and-research/">Education & Research</a></li>
-			          </ul>
-			        </li>
+			         	</ul>
+		        	</li>
 			        <li><a href="https://carto.com/pricing/"><b>Pricing</b></a></li>
 			        <li><a href="https://carto.com/blog"><b>Blog</b></a></li>
-			      </ul>
-			      <ul class="nav navbar-nav navbar-right">
-			        <li><a style="cursor:pointer" onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-log-in"></span><b> Login</b></a></li>
-			        <li><a href="https://carto.com/request-live-demo/"><span class="glyphicon glyphicon-envelope"></span> <b>Contact us</b></a></li>
-			      </ul>
-			    </div>
-			  </div>
-			</div>
-		</div>
+		    	</ul>
+		    	<ul class="nav navbar-nav navbar-right">
+				    <li><a style="cursor:pointer" onclick="document.getElementById('id01').style.display='block'"><b> Login</b></a></li>
+				    <li><a href="https://carto.com/request-live-demo/"> <b>Contact us</b></a></li>
+			    </ul>
+		    </div>
+		  </div>
 	</nav> <!--End of Main Menu-->
 
 	<!--Login -->
@@ -101,7 +96,6 @@
 	      		<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 	      		<input type="checkbox" checked="checked"> Remember me
 	      		<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
 	      		<div class="clearfix">
 	        		<button  type="submit" class="login signupbtn">Sign Up</button>
 	      		</div>
@@ -111,26 +105,26 @@
 
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="documentation.html">Home</a>
+		<a href="index.html">Home</a>
 		<a href="#">Client libraries</a>
-  		<a href="#">CARTO.js<span class="caret"></span></a>
-		    <ul class = "nav nav-tabs">
+  		<a href="#">CARTO.js</a>
+		    <ul>
 		        <li class="active"><a data-toggle="tab" href="#getting-started">Getting Started</a></li>
 		        <li><a data-toggle="tab" href="#general-concepts">General Conepts</a></li>
 		        <li><a data-toggle="tab" href="#named-maps">Named Maps</a></li>                        
 		        <li><a data-toggle="tab" href="#specific-functions">Specific UI Functions</a></li>
 		        <li><a data-toggle="tab" href="#events">Events</a></li>
-		        <li><a data-toggle="tab" href="#`references">API Reference</a></li>
+		        <li><a data-toggle="tab" href="#references">API Reference</a></li>
 		    </ul>
 		<a href="#">Location Data Service</a>
 			<ul>
-				<li><a href="#"> Routing</a></li>
+				<li><a data-toggle="tab" href="#routing"> Routing</a></li>
 			</ul>
 		<a href="#">Builder</a>
 			<ul>
-				<li><a href="#">Statics</a></li>
-		   		<li><a href="#">Tiles</a></li>
-		   		<li><a href="#">WMS</a></li>
+				<li><a data-toggle="tab" href="#statics">Statics</a></li>
+		   		<li><a data-toggle="tab" href="#tiles">Tiles</a></li>
+		   		<li><a data-toggle="tab" href="#wms">WMS</a></li>
 		   	</ul>
 	</div>
 
@@ -145,12 +139,12 @@
 					<div class="panel">
 						<div class="panel-body">
 							<h4 class="panel-title">
-								<a href="documentation.html">Home</a>
+								<a href="index.html">Home</a>
 							</h4>
 						</div>
 							<div class="panel-body">
 							<h4 class="panel-title">
-								<a href="documentation.html">Client libraries</a>
+								<a href="index.html">Client libraries</a>
 							</h4>
 						</div>
 							<div class="panel-body">
@@ -164,7 +158,7 @@
 							        <li><a data-toggle="tab" href="#general-concepts">General Conepts</a></li>
 							        <li><a data-toggle="tab" href="#named-maps">Named Maps</a></li>                        
 							        <li><a data-toggle="tab" href="#specific-functions">Specific UI Functions</a></li>
-							        <li><a data-toggle="tab" href="#events">Events</a></li>
+							        <li><a data-toggle="tab" href="#events">Events</a></li><br>
 							        <li><a data-toggle="tab" href="#references">API Reference</a></li>
 							    </ul>
 							</div>
@@ -173,18 +167,20 @@
 							  		<a data-toggle="collapse" href="#location"><b>Location Data Service</b></a>
 							   	</h4>
 							</div>
-							<div id="location" class="panel-collapse collapse in">
-							    <div class="panel-body"><a href="#">Routing</a></div>
+							<div class="location" class="panel-collapse collapse in">
+							    <ul class="routing" class = "nav nav-tabs">
+							        <li><a data-toggle="tab" href="#routing">Routing</a></li>
+							    </ul>
 							</div>
 							<div class="panel-body">
 							   	<h4 class="panel-title">
 							  		<a data-toggle="collapse" href="#builder"><b>Builder</b></a>
 							   	</h4>
 							</div>
-							<div id="builder" class="panel-collapse collapse in">
-							    <div class="panel-body"><span class="glyphicon glyphicon-picture"></span><a href="#"> Static</a></div>
-							    <div class="panel-body"><span class="glyphicon glyphicon-th"></span><a href="#">Tiles</a></div>
-							    <div class="panel-body"><span class="glyphicon glyphicon-folder-open"></span><a href="#"> WMS</a></div>
+							<div class="panel-collapse collapse in location">
+							    <div class="panel-body"><span class="glyphicon glyphicon-picture"></span><a href="https://carto.com/docs/carto-engine/carto-js/static-maps/"> Static</a></div>
+							    <div class="panel-body"><span class="glyphicon glyphicon-th"></span><a href="#tiles">Tiles</a></div>
+							    <div class="panel-body"><span class="glyphicon glyphicon-folder-open"></span><a href="#wms"> WMS</a></div>
 							</div>
 						</div>
 				</div>	
@@ -194,13 +190,13 @@
 			<div class="tab-content">
 			    <div id="getting-started" class="tab-pane fade in active">
 					<div class="col-sm-10 col-md-8">
-						<div id="txt1">
+						<div class="txt1">
 							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>GETTING STARTED</b></h1>
 							<p class="comment">The simples way to use visualization created in CARTO on an external site is as follows</p>
 						</div><br>
 						<img id="codeImg" src="cartoCode.jpg" alt="Carto's Code" style="width:100%"><br>
 						<a style="color:#5CDEFF;" id="codeLink" href="https://github.com/CartoDB/cartodb.js/blob/develop/examples/easy.html" target="_blank">Grab the complete example source code</a>
-						<div id="txt2">
+						<div class="txt1">
 							<h4><b>Using the CARTO.js LibraryPermalink</b></h4>
 							<p class="comment">CARTO-js can be used to embed a visualization you have designed using CARTO's user interface, or to dynamically create visualizations from scratch, using data. If you want to create new maps on your webpage, jump to Creatind a visualization from scratch. If you already have maps on your webpage and want to add CARTO visualization to them, read Adding CARTO layers to an existing map.<br><br> You can also use the CARTO APIs to create visualizations programmatically. This can be useful when the visualizations react to user interactions. To read more about it, jumo to Creating visualizations at runtime.</p>		
 						</div><br>
@@ -222,7 +218,7 @@
 							    <td>If a function is specified, it is called once the visualization is created</td>
 							</tr>
 						</table><br>	
-						<div id="txt3">
+						<div class="txt1">
 							<h4><b>Other Mapping Libraries</b></h4>
 							<p class="comment">We have also made it easy for you to build maps using the mapping library of your choice. Whether you are using Leaflet or something else, our CARTO.js code remains the same. This makes our API documentation simple and straightforward. It also makes it easy for you to consistently develop, or maintain, multiple maps online.</p>
 						</div><br>
@@ -237,12 +233,12 @@
 							</div>
 						</div><br>
 							
-						<div id="txt4">
+						<div class="txt1">
 							<h4><b>Creating a Visualization from ScratchPermalink</b></h4>
 							<p class="comment">This is the easiest way to quickly get a CARTO map onto your webpage. Use this method when there is no map in your application, and you want to add the visualization to hack over it. CARTO.js handles all the details of loading a map interface, basemap, and your CARTO visualization.<br><br>You can start by giving CARTO.js the DIV ID from your HTML where you want to place your map, and the viz.json URL of your visualization (which you can get from the Publish your map options)</p>
 						</div><br>
 
-						<div id="txt5">
+						<div class="txt1">
 							<h4><b>Next Steps</b></h4>
 							<p class="comment">Once the form, with the stored payment token, is submitted to your server, you'll want to use the paymen details just collected. Usually this means one of three actions.</p>
 						</div><br>
@@ -257,9 +253,9 @@
 								</div>
 							</div>
 						</div><br>
-						<div id="txt6">
+						<div class="txt1">
 							<h4><b>Questions?</b></h4>
-							<p class="comment">We are always happy to help with code or other questions you might have! Search our site for more information or <a style="color:#5CDEFF;" href="https://carto.com/request-live-demo/">send us an email!</a></p>					
+							<p class="comment">We are always happy to help with code or other questions you might have! Search our site for more information or <a style="color:#5CDEFF;" href="https://carto.com/request-live-demo/">send us an email!</a></p>	
 						</div><br>
 					</div><!--End of Page Content-->
 
@@ -268,29 +264,60 @@
 
 				<div id="general-concepts" class="tab-pane fade">
 					<div class="col-sm-10 col-md-8">
-						<div id="txt1">
+						<div class="txt1">
 							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>General Concepts</b></h1>
-							<p class="comment"></p>
+							<p class="comment">The following concepts are the same for every endpoint in the API except when it’s noted explicitly.</p>
+						</div>
+						<div class="txt1">
+							<h4><b>AuthPermalink</b></h4>
+							<p class="comment">By default, users do not have access to private tables in CARTO. In order to instantiate a map from private table data an API Key is required. Additionally, to include some endpoints, an API Key must be included (e.g. creating a Named Map)<br><br>To execute an authorized request, <i>api_key=YOURAPIKEY</i> should be added to the request URL. The param can be also passed as POST param. Using HTTPS is mandatory when you are performing requests that include your <i>api_key</i>.</p>	
+						</div>
+						<div class="txt1">
+							<h4><b>Errors</b></h4>
+							<p class="comment">Errors are reported using standard HTTP codes and extended information encoded in JSON.<br><br>If you use JSONP, the 200 HTTP code is always returned so the JavaScript client can receive errors from the JSON object.</p>
+							<img src="error-code.png" width="100%">
+						</div><br><br>
+						<div class="txt1">
+							<h4><b>CORS supportPermalink</b></h4>
+							<p class="comment">All the endpoints, which might be accessed using a web browser, add CORS headers and allow OPTIONS method.</p>
 						</div>
 					</div>
 				</div>
+				
 
 				<div id="named-maps" class="tab-pane fade">
 					<div class="col-sm-10 col-md-8">
-						<div id="txt1">
+						<div class="txt1">
 							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>Named Maps</b></h1>
-							<p class="comment"></p>
+							<p class="comment">Named Maps are essentially the same as Anonymous Maps except the MapConfig is stored on the server, and the map is given a unique name. You can create Named Maps from private data, and users without an API Key can view your Named Map (while keeping your data private).<br><br>The Named Map workflow consists of uploading a MapConfig file to CARTO servers, to select data from your CARTO user database by using SQL, and specifying the CartoCSS for your map.<br><br>The response back from the API provides the template_id of your Named Map as the name (the identifier of your Named Map), which is the name that you specified in the MapConfig. You can which you can then use to create your Named Map details, or <a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/maps-api/named-maps/#fetching-xyz-tiles-for-named-maps">fetch XYZ</a> tiles directly for Named Maps.</p>
+						</div>
+						<div class="note2">
+							<div class="row">
+								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+									<img src="tip-icon.png" alt="Label Logo" width="25px" height="30px">
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+									<p><b>TIP:</b>You can also use a Named Map that you created (which is defined by its name), to create a map using CARTO.js. This is achieved by adding the <a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/carto-js/layer-source-object/#named-maps-layer-source-object-type-namedmap">namedmap type</a> layer source object to draw the Named Map.</p>		
+								</div>
+							</div>
+						</div><br>
+						<div class="txt1">
+							<p class="comment">The main differences, compared to Anonymous Maps, is that Named Maps include:<br></p>
+							<ul>
+								<li><b>auth token</b><br>This allows you to control who is able to see the map based on an auth token, and create a secure Named Map with password-protection.</li>
+								<li><b>template map</b><br>The template map is static and may contain placeholders, enabling you to modify your maps appearance by using variables. Templates maps are persistent with no preset expiration. They can only be created, or deleted, by a CARTO user with a valid API KEY (See <a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/maps-api/named-maps/#arguments">auth argument</a>).</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 
 				<div id="specific-functions" class="tab-pane fade">
 					<div class="col-sm-10 col-md-8">
-						<div id="txt1">
+						<div class="txt1">
 							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>Specific UI Functions</b></h1>
 							<p class="comment">There are a few functions in CARTO.js for creating, enabling, and disabling pieces of the user interface.</p>
 						</div><br>						
-						<div id="txt2">
+						<div class="txt1">
 							<h4><b>vis.addOverlay(tooltip)</b></h4>
 							<p class="comment">A tooltip is an infowindow that appears when you hover your mouse over a map feature with <i>vis.addOverlay(options)</i>. A tooltip appears where the mouse cursor is located on the map. You can customize the position of how the tooltip appears by defining the position options.</p>
 						</div>
@@ -304,11 +331,11 @@
 								</div>
 							</div>
 						</div><br>
-						<div id="txt2">
+						<div class="txt1">
 							<h4><b>vis.addOverlay(infobox)</b></h4>
 							<p class="comment">Similar to a tooltip, an infobox displays a small box when you hover your mouse over a map feature. When viewing an infobox on a map, the position of the infobox is fixed, and always appears in the same position; depending on how you defined the position values for the infobox.</p>
 						</div>
-						<div id="txt2">
+						<div class="txt1">
 							<h4><b>cartodb.vis.Vis.addInfowindow(map, layer, fields [, options])Permalink</b></h4>
 							<p class="comment">Infowindows provide additional interactivity for your published map, controlled by layer events. It enables interaction and overrides the layer interactivity. A pop-up information window appears when a viewer clicks on a map feature.</p>
 						</div>
@@ -353,7 +380,7 @@
 				</div>
 				<div id="events" class="tab-pane fade">
 					<div class="col-sm-10 col-md-8">
-						<div id="txt1">
+						<div class="txt1">
 							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>Events</b></h1>
 							<p class="comment">You can bind custom functions to layer events by adding listeners and callbacks to the async portions of the CARTO.js library. Active layer events are triggered by layers on your webpage that are already loaded (Tip: these are the <i>createLayer</i> and <i>createVis</i> functions that return the done event. For details, see <a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/carto-js/getting-started/#loading-listener-events">Loading Events</a>). Each event requires the layer to include an interactivity layer. This is useful for integrating your website with your maps, adding events for mouseovers and click events.</p>
 						</div>
@@ -367,7 +394,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="txt2">
+						<div class="txt1">
 							<h4><b>layer</b></h4><br><br>
 							<h4><b>layer.featureOver(event, latlng, pos, data, layerIndex)</b></h4>
 							<p class="comment">Triggered when the user mouse hovers on any feature.</p>
@@ -398,11 +425,11 @@
 							    <td>The <i>layerIndex</i> where the event happened.</td>
 							</tr>
 						</table>
-						<div id="txt2">
+						<div class="txt1">
 							<h4><b>layer.featureOut(layerIndex)Permalink</b></h4>
 							<p class="comment">Triggered when the user hovers out any feature. For example, you might want to use this event if you highlight polygons on mouseover and need a way to know when to remove the highlighting after the mouse has left.</p>
 						</div>
-						<div id="txt2">
+						<div class="txt1">
 							<h4><b>layer.featureClick(event, latlng, pos, data, layerIndex)Permalink</b></h4>
 							<p class="comment">Triggered when the user clicks on a feature of a layer.</p>
 						</div>
@@ -411,10 +438,10 @@
 				
 				<div id="references" class="tab-pane fade">
 					<div class="col-sm-10 col-md-8">
-						<div id="txt1">
+						<div class="txt1">
 							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>API Reference</b></h1>
 							<p class="comment">This documentation is intended for developers and describes specific methods from the latest version of the CARTO.js library.</p>
-							<div id="txt2">
+							<div class="txt1">
 								<h4><b>cartodb.createVisPermalink</b></h4><br><br>
 								<h4><b>cartodb.createVis(map_id, vizjson_url[, options] [, callback])Permalink</b></h4>
 								<p class="comment">Creates a visualization inside the map_id DOM object.</p>
@@ -529,7 +556,7 @@
 								    <td>true to disable CDN when fetching tiles</td>
 								</tr>
 							</table>
-							<div id="txt2">
+							<div class="txt1">
 								<h6><b>Returns</b></h6>
 								<p class="comment">A promise object. You can listen for the following events:</p>
 							</div>
@@ -548,6 +575,128 @@
 								</tr>
 							</table>
 							<a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/carto-js/api-methods/">Visit this API for more detailed information</a><br><br><br><br>
+						</div>
+					</div>
+				</div>
+
+				<div id="routing" class="tab-pane fade">
+					<div class="col-sm-10 col-md-8">
+						<div class="txt1">
+							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>Routing Functions</b></h1>
+							<p class="comment">Routing is the navigation from a defined start location to a defined end location. The calculated results are displayed as turn-by-turn directions on your map, based on the transportation mode that you specified. Routing services through CARTO are available by using the available functions in the Data Services API.</p>
+							<div class="txt1">
+								<h4><b>cdb_route_point_to_point(origin geometry(Point), destination geometry(Point), mode text, [options text[], units text])</b></h4>
+								<p class="comment">Returns a route from origin to destination.</p>
+							</div>
+							<table class="table table-bordered">
+								<tr>
+									<th><b>Name</b></th>
+									<th><b>Type</b></th>
+								    <th><b>Description</b></th>
+								    <th><b>Accepted values</b></th>
+								</tr>
+								<tr>
+								    <td>origin</td>
+								    <td>geometry(Point)</td>
+								    <td>Origin point, in 4326 projection, which defines the start location.</td>
+								    <td></td>
+								</tr>
+								<tr>							
+								    <td>destination</td>
+								    <td>geometry(Point)</td>
+								    <td>Destination point, in 4326 projection, which defines the end location.</td>
+								    <td></td>
+								</tr>
+								<tr>
+								    <td>mode</td>
+								    <td>text</td>
+								    <td>Type of transport used to calculate the routes.</td>
+								    <td>car, walk, bicycle or public_transport</td>
+								</tr>
+								<tr>
+								    <td>options</td>
+								    <td>text[]</td>
+								    <td>(Optional) Multiple options to add more capabilities to the analysis. See Optional routing parameters for details.</td>
+								    <td></td>
+								</tr>
+								<tr>
+								    <td>units</td>
+								    <td>text</td>
+								    <td>Unit used to represent the length of the route.</td>
+								    <td>kilometers, miles. By default is kilometers</td>
+								</tr>
+							</table>
+							<div class="txt1">
+								<h6><b>Returns</b></h6>
+							</div>
+							<table class="table table-bordered">
+								<tr>
+									<th><b>Name</b></th>
+									<th><b>Type</b></th>
+								    <th><b>Description</b></th>
+								</tr>
+								<tr>
+								    <td>duration</td>
+								    <td>integer</td>
+								    <td>Duration in seconds of the calculated route.</td>
+								    <td></td>
+								</tr>
+								<tr>							
+								    <td>length</td>
+								    <td>real</td>
+								    <td>Length in the defined unit in the units field. kilometers by default .</td>
+								</tr>
+								<tr>
+								    <td>the_geom</td>
+								    <td>geometry(LineString)</td>
+								    <td>LineString geometry of the calculated route in the 4326 projection.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div id="static" class="tab-pane fade">
+					<div class="col-sm-10 col-md-8">
+						<div class="txt1">
+							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>API Reference</b></h1>
+							<p class="comment">This documentation is intended for developers and describes specific methods from the latest version of the CARTO.js library.</p>
+							<div class="txt1">
+								<h4><b>cartodb.createVisPermalink</b></h4><br><br>
+								<h4><b>cartodb.createVis(map_id, vizjson_url[, options] [, callback])Permalink</b></h4>
+								<p class="comment">Creates a visualization inside the map_id DOM object.</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div id="tiles" class="tab-pane fade">
+					<div class="col-sm-10 col-md-8">
+						<div class="txt1">
+							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>API Reference</b></h1>
+							<p class="comment">This documentation is intended for developers and describes specific methods from the latest version of the CARTO.js library.</p>
+							<div class="txt1">
+								<h4><b>cartodb.createVisPermalink</b></h4><br><br>
+								<h4><b>cartodb.createVis(map_id, vizjson_url[, options] [, callback])Permalink</b></h4>
+								<p class="comment">Creates a visualization inside the map_id DOM object.</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div id="wms" class="tab-pane fade">
+					<div class="col-sm-10 col-md-8">
+						<div class="txt1">
+							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>API Reference</b></h1>
+							<p class="comment">This documentation is intended for developers and describes specific methods from the latest version of the CARTO.js library.</p>
+							<div class="txt1">
+								<h4><b>cartodb.createVisPermalink</b></h4><br><br>
+								<h4><b>cartodb.createVis(map_id, vizjson_url[, options] [, callback])Permalink</b></h4>
+								<p class="comment">Creates a visualization inside the map_id DOM object.</p>
+							</div>
+							
 						</div>
 					</div>
 				</div>

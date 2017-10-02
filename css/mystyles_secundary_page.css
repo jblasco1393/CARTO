@@ -6,10 +6,8 @@ body{
 a{
 	color: #1F314C;
 }
-li.active{
-    font-weight: bold;
-    border-bottom: 1px solid #F7F6F6;
-}
+
+
 /*Main Navigation Bar*/
 .nav{
     padding-left: 30px
@@ -20,8 +18,8 @@ li.active{
 .navbar-inner{
 	border-bottom: 1px solid #D8D8DC;
 }
-#mainLogo{
-	margin-right: 40px;
+img {
+	padding-left: 80px;
 }
     /*Sign in || Login Form*/
     .username, input[type=password] {
@@ -129,21 +127,24 @@ li.active{
 	font-size: ;
 	color: #DCDCDC;
 }
+li.active{
+    font-weight: bold;
+    border-bottom: 1px solid #F7F6F6;
+}
 .nav-tabs{
     border: none;
+    display: block;
+}
+div.location{
+    background-color: black;
+    margin-left: 0px;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     border: none;
 }
-.panel-collapse{
-    padding-left: 30px;
+.panel-collapse {
+	margin-left: 0px;
 	color: #393A6A;
-}
-div.location{
-    padding-left: 0px;
-}
-ul.routing{
-    padding-left: 15px
 }
 .sidenav {
     height: 100%;

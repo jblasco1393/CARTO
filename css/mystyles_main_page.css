@@ -22,6 +22,9 @@ a{
     padding-left:20px;
     margin-right: 40px;
 }
+.nav.navbar-nav li:last-child{
+    float:right
+} 
 
     /*Login || Sign in Form*/
     .username, input[type=password] {
@@ -174,6 +177,7 @@ a{
 	background-color: #fff;
 	border: 1px solid #D8D8DC;
 	box-shadow:1px 1px 2px #777;
+    text-align: left;
 }
 #infoBox-lg{
 	font-family: 'Merriweather Sans', sans-serif;
