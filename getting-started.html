@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="mystyles_secundary_page.css"/>
+  <link rel="stylesheet" type="text/css" href="css/mystyles_secundary_page.css"/>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -16,9 +16,9 @@
 	<nav class="navbar navbar-default">
 		<div class="navbar-inner container">
 		    <div class="navbar-header">
-		    	<a id="mainLogo" href="index.html"><img src="logo_carto.png" alt="Carto's Logo" width="120px" height="53px"></a>
+		    	<a id="mainLogo" href="index.html"><img src="images/logo_carto.png" alt="Carto's Logo" height="53px"></a>
 		      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <img src="home-icon.png">                       
+		        <img src="images/home-icon.png">                       
 		      </button>
 		    </div> <!--END OF THE HEADER-->
 
@@ -60,7 +60,7 @@
 		<form class="modal-content animate" action="/action_page.php">
 		    <div class="imgcontainer">
 		     	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-		    	<img src="loginpic.png" alt="Map picture" class="avatar">
+		    	<img src="images/loginpic.png" alt="Map picture" class="avatar">
 		    </div>
 
 		    <div class="contain">
@@ -84,7 +84,7 @@
 		<form class="modal-content animate" action="/action_page.php">
 	    	<div class="imgcontainer">
 		     	<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-		    	<img src="logo_carto.png" alt="Map picture" class="avatar2">
+		    	<img src="images/logo_carto.png" alt="Map picture" class="avatar2">
 		    </div>
 	    	<div class="contain">
 	    		<label><b>Email</b></label>
@@ -129,7 +129,7 @@
 	</div>
 
 	<div class="hidden-lg hidden-md" id="openSim">
-		<span style="marging-left:30px; font-size:20px; cursor:pointer" onclick="openNav()"><img src="right-arrow.png"></span>
+		<span style="marging-left:30px; font-size:20px; cursor:pointer" onclick="openNav()"><img src="images/right-arrow.png"></span>
 	</div>
     
 	<div class="container">
@@ -194,7 +194,7 @@
 							<h1 style="margin-top: 100px;margin-bottom: 20px;font-family: 'Ubuntu', sans-serif;color: #393A6A;" class="rotulo"><b>GETTING STARTED</b></h1>
 							<p class="comment">The simples way to use visualization created in CARTO on an external site is as follows</p>
 						</div><br>
-						<img id="codeImg" src="cartoCode.jpg" alt="Carto's Code" style="width:100%"><br>
+						<img id="codeImg" src="images/cartoCode.jpg" alt="Carto's Code" style="width:100%"><br>
 						<a style="color:#5CDEFF;" id="codeLink" href="https://github.com/CartoDB/cartodb.js/blob/develop/examples/easy.html" target="_blank">Grab the complete example source code</a>
 						<div class="txt1">
 							<h4><b>Using the CARTO.js LibraryPermalink</b></h4>
@@ -225,7 +225,7 @@
 						<div class="note">
 							<div class="row">
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-									<img src="info.png" alt="Info Logo" width="30px" height="30px">
+									<img src="images/info.png" alt="Info Logo" width="30px" height="30px">
 								</div>
 								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
 									<p >CARTO.js automaticallly includes dependencies from other mapping libraries (such as Leaflet, jQuerry, Mustache, Underscore, ans so on). You do not have to manually include these libraries, or worry about other mapping library version control, when you are using CARTO.js. If you need to see which version of other mapping libraries are included, view the vendor folder for each CARTO.js release.</p>	
@@ -245,7 +245,7 @@
 						<div class="note2">
 							<div class="row">
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-									<img src="phone.png" alt="Phone Logo" width="25px" height="30px">
+									<img src="images/phone.png" alt="Phone Logo" width="25px" height="30px">
 								</div>
 								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
 									<h5><b>General Concepts</b></h5>
@@ -275,7 +275,7 @@
 						<div class="txt1">
 							<h4><b>Errors</b></h4>
 							<p class="comment">Errors are reported using standard HTTP codes and extended information encoded in JSON.<br><br>If you use JSONP, the 200 HTTP code is always returned so the JavaScript client can receive errors from the JSON object.</p>
-							<img src="error-code.png" width="100%">
+							<img src="images/error-code.png" width="100%">
 						</div><br><br>
 						<div class="txt1">
 							<h4><b>CORS supportPermalink</b></h4>
@@ -294,7 +294,7 @@
 						<div class="note2">
 							<div class="row">
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-									<img src="tip-icon.png" alt="Label Logo" width="25px" height="30px">
+									<img src="images/tip-icon.png" alt="Label Logo" width="25px" height="30px">
 								</div>
 								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
 									<p><b>TIP:</b>You can also use a Named Map that you created (which is defined by its name), to create a map using CARTO.js. This is achieved by adding the <a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/carto-js/layer-source-object/#named-maps-layer-source-object-type-namedmap">namedmap type</a> layer source object to draw the Named Map.</p>		
@@ -324,7 +324,7 @@
 						<div class="note">
 							<div class="row">
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-									<img src="info.png" alt="Info Logo" width="30px" height="30px">
+									<img src="images/info.png" alt="Info Logo" width="30px" height="30px">
 								</div>
 								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
 									<p >If you are using <i>createLayer</i> for a map object that contains an enabled tooltip, you can disable the tooltip by applying the <i>false</i> value. <a style="color:#5CDEFF;" href="https://carto.com/docs/carto-engine/carto-js/api-methods/#cartodbcreatelayermap-layersource--options--callback">See the cartodb.createLayer(map, layerSource [, options] [, callback])</a> <i>tooltip</i> description for how to enable/disable an interactive tooltip.</p>	
@@ -369,7 +369,7 @@
 						<div class="note2">
 							<div class="row">
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-									<img src="tip-icon.png" alt="Label-icon">
+									<img src="images/tip-icon.png" alt="Label-icon">
 								</div>
 								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
 									<p><b>TIP:</b>See <a style="color:#5CDEFF;" href="https://carto.com/docs/faqs/infowindows/#how-can-i-use-cartojs-to-create-and-style-infowindows">How can I use CARTO.js to create and style infowindows?</a> for an overview of how to create infowindows.</p>		
@@ -387,7 +387,7 @@
 						<div class="note">
 							<div class="row">
 								<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-									<img src="info.png" alt="Info-icon" width="32px" height="32px">
+									<img src="images/info.png" alt="Info-icon" width="32px" height="32px">
 								</div>
 								<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
 									<p>Be mindful of using these events, as these functions can get costly if you have a lot of features on a map.</p>		
@@ -709,7 +709,7 @@
 	<footer class="container">
 		<div class="row hidden-xs">
 			<div class="col-sm-3 col-md-4">
-				<img src="logo_carto.png" id="footerLogo" alt="Carto's Logo" width="120px" height="53px">
+				<img src="images/logo_carto.png" id="footerLogo" alt="Carto's Logo" height="53px">
 			</div>
 
 			<div class="col-sm-9 col-md-8">
@@ -724,9 +724,9 @@
                             <a href="https://carto.com/integrations">Integrations<br></a>
                             <a href="https://carto.com/attributions">Attributions<br></a>
                             <a href="https://carto.com/pricing">Pricing<br><br><br></a>
-                            <a href="https://www.facebook.com/CartoDB"><img src="facebook_icon.png" alt="Facebook Icon" id="facebook" width="20px"height="20px"></a>
-                            <a href="https://twitter.com/CARTO"><img src="twiter_icon.png" alt="Twitter Icon" id="twitter" width="20px"height="20px"></a>
-                            <a href="https://www.linkedin.com/company-beta/5084329/"><img src="linkedin_icon.png" alt="LinkedIn Icon" id="linkedin" width="20px"height="20px"></a>
+                            <a href="https://www.facebook.com/CartoDB"><img src="images/facebook_icon.png" alt="Facebook Icon" id="facebook" width="20px"height="20px"></a>
+                            <a href="https://twitter.com/CARTO"><img src="images/twiter_icon.png" alt="Twitter Icon" id="twitter" width="20px"height="20px"></a>
+                            <a href="https://www.linkedin.com/company-beta/5084329/"><img src="images/linkedin_icon.png" alt="LinkedIn Icon" id="linkedin" width="20px"height="20px"></a>
                         </div>
                         <div class="col-sm-3">
                             <h6><b>Resources</b></h6>
@@ -806,18 +806,18 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-6">
-						<a href="https://carto.com"><img src="logo_carto.png" id="footerLogo" alt="Carto's Logo" width="120px" height="53px"></a>
+						<a href="https://carto.com"><img src="images/logo_carto.png" id="footerLogo" alt="Carto's Logo" height="53px"></a>
 					</div>
 					<div class="col-xs-6">
-						<a href="https://www.facebook.com/CartoDB"><img src="facebook_icon.png" alt="Facebook Icon" id="facebook" width="20px"height="20px"></a>
-						<a href="https://twitter.com/CARTO"><img src="twiter_icon.png" alt="Twitter Icon" id="twitter" width="20px"height="20px"></a>
-						<a href="https://www.linkedin.com/company-beta/5084329/"><img src="linkedin_icon.png" alt="LinkedIn Icon" id="linkedin" width="20px"height="20px"></a>
+						<a href="https://www.facebook.com/CartoDB"><img src="images/facebook_icon.png" alt="Facebook Icon" id="facebook" width="20px"height="20px"></a>
+						<a href="https://twitter.com/CARTO"><img src="images/twiter_icon.png" alt="Twitter Icon" id="twitter" width="20px"height="20px"></a>
+						<a href="https://www.linkedin.com/company-beta/5084329/"><img src="images/linkedin_icon.png" alt="LinkedIn Icon" id="linkedin" width="20px"height="20px"></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 </div> <!--End of Offcanvas-->
-<script src="myscripts.js"></script>
+<script src="js/myscripts.js"></script>
 </body>
 </html>
