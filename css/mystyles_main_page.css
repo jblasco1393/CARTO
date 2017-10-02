@@ -240,7 +240,6 @@ a{
     margin-bottom: 10px;
 }
 .bgimg {
-    background-image: url('coming_soon.jpg');
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -249,7 +248,7 @@ a{
     font-size: 25px;
 }
 .middle {
-    color: #fff;
+    color: #393A6A;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
 }
